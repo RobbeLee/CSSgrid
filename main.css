@@ -1,0 +1,181 @@
+html,
+body,
+h2,
+.rapper {
+    padding: 0;
+    margin: 0;
+}
+
+.inleiding {
+    padding: 2em;
+    background-color: #57a;
+    padding-bottom: 0;
+}
+
+.inleiding__title {
+    color: #fafafa;
+}
+
+inleiding__p {
+    color: #67a;
+}
+
+body {
+    padding: 2em;
+    padding-left: 0;
+    background-color: #fafafa;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    padding-bottom: .2em;
+}
+
+section {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    padding-bottom: .2em;
+}
+
+.tip__number {
+    background-color: #47a;
+    color: #fafafa;
+    font-size: 3em;
+    width: 1.2em;
+    text-align: right;
+    padding: .2em;
+}
+
+.tip__p {
+    padding: 1em;
+}
+
+img {
+    max-width: 100%;
+}
+
+.aside {
+    background-color: #57a;
+}
+
+.aside__title {
+    color: #fafafa;
+}
+
+.aside__ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.aside__a {
+    padding: 2em;
+    text-decoration: none;
+    display: block;
+    color: #fafafa;
+}
+
+.footer {
+    padding: 2em;
+    background-color: #67a;
+}
+
+@media screen and (min-width: 760px) {
+    .img {
+        display: block;
+        background-image: url('img/img1.jpg');
+        background-size: cover;
+        background-position: center center;
+    }
+
+    section {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "kop kop"
+            "t1 t2"
+            "t3 t4"
+            "t3 t5"
+            "img t6"
+            "img t7"
+            "t8 aside"
+            "t9 aside"
+            "t0 aside"
+            "foot foot";
+    }
+
+    .tip {
+        display: grid;
+        grid-template-columns: auto 1fr;
+    }
+
+    .inleiding {
+        grid-area: kop;
+    }
+
+    .tip1 {
+        grid-area: t1;
+    }
+
+    .tip2 {
+        grid-area: t2;
+    }
+
+    .tip3 {
+        grid-area: t3;
+    }
+
+    .tip4 {
+        grid-area: t4;
+    }
+
+    .tip5 {
+        grid-area: t5;
+    }
+
+    .tip6 {
+        grid-area: t6;
+    }
+
+    .tip7 {
+        grid-area: t7;
+    }
+
+    .tip8 {
+        grid-area: t8;
+    }
+
+    .tip9 {
+        grid-area: t9;
+    }
+
+    .tip10 {
+        grid-area: t0;
+    }
+
+    .aside {
+        grid-area: aside;
+    }
+
+    .img {
+        grid-area: img;
+    }
+
+    .footer {
+        grid-area: foot;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    section {
+
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas: "kop kop kop"
+            "t1 t2 img"
+            "t3 t4 img"
+            "t3 t5 img"
+            "aside t6 t6"
+            "aside t7 t8"
+            "aside t9 t10"
+            "aside foot foot";
+    }
+
+
+}
